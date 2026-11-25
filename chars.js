@@ -1,0 +1,18 @@
+// Personagens por tema (índice em temas.js). "emoji Nome|poder 1-100 (escondido do jogo)|Stand/Poder|cor", separados por ;
+// Mais poder SEMPRE vence a batalha. Edite os números à vontade.
+const SP='🕷️ Homem-Aranha|70|Teia & Sentido Aranha|#e53935',SQ='🐿️ Mulher-Esquilo|45|Esquilos de Ataque|#a1887f';
+module.exports={
+ 2:'🧔 Jonathan Joestar|60|Hamon Overdrive|#e0a030;🧛 Dio (Phantom Blood)|66|Vaporização Espacial|#7a1f3d;🧘 Zeppeli|52|Hamon Mestre|#4fc3f7;🥋 Tonpetty|38|Hamon Veloz|#9ccc65;🎩 Speedwagon|30|Faca e Lábia|#8d6e63;🔪 Jack, o Estripador|35|Zumbi de Lâminas|#616161',
+ 3:'🧢 Joseph Joestar|68|Hamon + Truques|#43a047;🫧 Caesar Zeppeli|58|Bolhas de Hamon|#29b6f6;😈 Kars|92|Modo Supremo|#6a1b9a;🌪️ Wamuu|84|Vento Divino|#ff7043;🔥 Esidisi|78|Chama de Calor|#e53935;🌿 Lisa Lisa|70|Hamon Mestra|#26a69a;🗿 Santana|60|Absorção Voraz|#78909c',
+ 4:'🧢 Jotaro Kujo|94|Star Platinum|#3949ab;⏱️ DIO (The World)|95|The World|#fdd835;💚 Kakyoin|64|Hierophant Green|#43a047;🗡️ Polnareff|70|Silver Chariot|#b0bec5;🔥 Avdol|66|Magician\'s Red|#ef6c00;🐶 Iggy|50|The Fool|#bcaaa4;🍦 Vanilla Ice|85|Cream|#eceff1',
+ 5:'💎 Josuke (Crazy Diamond)|86|Crazy Diamond|#ec407a;💣 Yoshikage Kira|90|Killer Queen|#ab47bc;🖐️ Okuyasu|72|The Hand|#5c6bc0;📖 Rohan Kishibe|70|Heaven\'s Door|#ffa726;📣 Koichi|72|Echoes ACT3|#66bb6a;🚗 Keicho Nijimura|68|Bad Company|#8d6e63',
+ 6:'🐞 Giorno Giovanna|97|Gold Experience Requiem|#ffd54f;👑 Diavolo|92|King Crimson|#c2185b;🪡 Bruno Bucciarati|76|Sticky Fingers|#1e88e5;🧲 Risotto Nero|85|Metallica|#8d6e63;🔫 Mista|68|Sex Pistols|#fbc02d;✈️ Narancia|60|Aerosmith|#4fc3f7;🕷️ Trish Una|66|Spice Girl|#f48fb1',
+ 7:'🧵 Jolyne Cujoh|76|Stone Free|#26a69a;🌌 Enrico Pucci|98|Made in Heaven|#7e57c2;⛈️ Weather Report|88|Heavy Weather|#90a4ae;💋 Ermes Costello|62|Kiss|#f06292;🥊 Foo Fighters|58|Foo Fighters|#4db6ac;🌊 Anasui|70|Diver Down|#5c6bc0;🔥 Emporio|60|Burning Down the House|#ef5350',
+ 8:'🏇 Johnny Joestar|78|Tusk Ato 4|#8d6e63;⚪ Gyro Zeppeli|76|Esfera de Aço|#ffca28;🦖 Diego Brando|82|Scary Monsters|#ef6c00;🇺🇸 Funny Valentine|96|D4C Love Train|#d32f2f;🌶️ Hot Pants|60|Cream Starter|#ec407a;⛏️ Mountain Tim|62|Oh! Lonesome Me|#6d4c41;🤠 Sandman|66|In a Silent Way|#a1887f',
+ 9:'🍑 Josuke Higashikata|84|Soft & Wet|#ffa726;🌸 Yasuho Hirose|58|Paisley Park|#f48fb1;💨 Jobin Higashikata|80|Speed King|#ef5350;🪨 Toru|97|Wonder of U|#757575;🎶 Joshu Higashikata|75|Doremifasolati Do|#42a5f5;🧶 Norisuke IV|70|Yo-Yo Ma|#9ccc65',
+ 10:'😎 Jodio Joestar|70|November Rain|#42a5f5;🌺 Dragona Joestar|68|Smooth Operators|#ec407a;🌴 Paco Laburantes|62|Golpe de Stand|#66bb6a',
+ 11:SP+';'+SQ+';🦾 Homem de Ferro|82|Repulsor Total|#d32f2f;❄️ Luna Snow|74|Tempestade Gélida|#4dd0e1;🗡️ Psylocke|66|Lâmina Psíquica|#ab47bc;👊 Punho de Ferro|68|Punho de Ferro|#fdd835;🕸️ Peni Parker|52|SP//dr|#ef5350',
+ 12:SP+';'+SQ+';🔨 Thor|91|Mjolnir: Raio Divino|#fbc02d;💀 Hela|93|Lâminas Necro|#2e7d32;🎭 Loki|80|Ilusões|#388e3c;🔮 Doutor Estranho|90|Artes Místicas|#ff7043;🌀 Magik|78|Portais Infernais|#ec407a',
+ 13:SP+';'+SQ+';🖤 Venom|80|Simbionte Furioso|#212121;💚 Hulk|94|HULK ESMAGA!|#2e7d32;🚀 Rocket Raccoon|50|Canhão Orbital|#8d6e63;🎧 Star-Lord|55|Blasters Elementais|#e53935;🐺 Wolverine|78|Garras de Adamantium|#fdd835',
+ 14:SP+';'+SQ+';🐆 Pantera Negra|76|Garras de Vibranium|#6a1b9a;🧲 Magneto|95|Controle Magnético|#c62828;🌩️ Tempestade|86|Controle do Clima|#90caf9;🛡️ Capitão América|70|Escudo de Vibranium|#1565c0;💀 Justiceiro|55|Arsenal Letal|#424242;🦾 Soldado Invernal|68|Braço Metálico|#78909c'
+};

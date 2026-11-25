@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leilão do que Não Pode Faltar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg"></div>
+<div class="goo a">ゴゴゴゴゴ</div><div class="goo b">ドドドド</div>
+<main>
+  <h1>🔨 Leilão Bizarro</h1>
+  <p class="sub">O que não pode faltar? Dê seu lance — YARE YARE DAZE!</p>
+
+  <section id="join">
+    <label>Seu nome <input id="name" maxlength="16" placeholder="Como é seu nome?"></label>
+    <div class="box">
+      <h3>Criar sala</h3>
+      <label>Tempo por item (seg) <input id="secs" type="number" min="5" max="60" value="15"></label>
+      <label>Tempo extra a cada lance (seg) <input id="extra" type="number" min="1" max="15" value="5"></label>
+      <label>Limite de dinheiro de cada jogador (R$) <input id="money0" type="number" min="50" max="2000" value="300"></label>
+      <label>Lance máximo por personagem (R$, 0 = sem limite) <input id="maxbid" type="number" min="0" max="2000" value="0"></label>
+      <button id="create">Criar sala</button>
+    </div>
+    <div class="box">
+      <h3>Entrar numa sala</h3>
+      <input id="code" maxlength="4" placeholder="CÓDIGO" style="text-transform:uppercase">
+      <button id="enter">Entrar</button>
+    </div>
+    <p id="err" class="lose"></p>
+  </section>
+
+  <section id="lobby" hidden>
+    <p>Código da sala:</p><div class="code" id="lcode"></div>
+    <p id="lcfg"></p>
+    <div id="lplayers"></div>
+    <button id="start">Escolher tema</button>
+    <p id="lwait"></p>
+  </section>
+
+  <section id="vote" hidden>
+    <h2>Vote no tema!</h2>
+    <p id="vinfo">Empate = sorteio. Mais votos = ganha.</p>
+    <div id="vthemes"></div>
+  </section>
+
+  <section id="game" hidden>
+    <div class="top"><h2 id="gtitle"></h2><div class="money">💰 R$ <span id="money">0</span></div></div>
+        <div class="list"><b>⭐ Personagens do leilão:</b> <span id="chars"></span></div>
+    <div class="card">
+      <div id="emoji">🔨</div>
+      <h3 id="iname"></h3>
+      <p id="ab" class="ab"></p>
+      <p>Lance atual: <b>R$ <span id="bid">0</span></b> — <span id="who"></span></p>
+      <div class="bar"><div id="timer"></div></div>
+      <div id="sec"></div>
+      <div class="btns" id="btns">
+        <button data-add="1">+ R$ 1</button>
+        <button data-add="5">+ R$ 5</button>
+        <button data-add="10">+ R$ 10</button>
+      </div>
+      <p id="last"></p>
+      <small id="count"></small>
+    </div>
+    <div id="gplayers"></div>
+  </section>
+
+  <section id="battle" hidden>
+    <h2 id="btitle"></h2>
+    <svg id="arena" viewBox="0 0 640 300"></svg>
+    <button id="bnext" hidden>Ver ranking final</button>
+  </section>
+
+  <section id="end" hidden>
+    <h2>🏆 Fim do leilão!</h2>
+    <div id="rank"></div>
+    <button id="again">Jogar de novo</button>
+    <p id="ewait"></p>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
